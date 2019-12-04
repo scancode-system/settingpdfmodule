@@ -1,0 +1,29 @@
+{
+    "name": "scancode/setting-pdf-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\SettingPdf\\Providers\\SettingPdfServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SettingPdf\\": ""
+        }
+    },
+    "type": "laravel-module",
+    "require": {
+        "scancode/portal-module": "0.*"
+    }
+}
