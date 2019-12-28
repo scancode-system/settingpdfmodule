@@ -14,7 +14,7 @@ class InsertSettingsRecordsFromSettingPdf extends Migration
      */
     public function up()
     {
-        Setting::create(['module' => 'SettingPdf', 'alias' => 'Pdf']);
+        Setting::create(['module' => 'SettingPdf', 'alias' => 'Pdf', 'import' => 'Pdf@setting']);
     }
 
     /**
