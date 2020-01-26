@@ -15,8 +15,8 @@ class CreateSettingPdfsTable extends Migration
     {
         Schema::create('setting_pdfs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('statement_responsibility');
-            $table->text('global_observation');
+            $table->text('statement_responsibility')->nullable();
+            $table->text('global_observation')->nullable();
             $table->timestamps();
         });
     }
